@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE mapper 
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hsbc.hktools.dao.GroupNameDao">
+	<resultMap type="GroupName" id="groupName">
+	    <id column="groupId" property="groupId"/>
+	    <result column="groupName" property="groupName"/>
+	</resultMap>
+   	<insert id="insertGroupName" parameterType="com.hsbc.hktools.entity.GroupName">
+     
+		insert into groupName(id, groupName) values(#{id}, #{groupName}) 
+    </insert>
+	<select id="getGroupNames" resultMap="groupName">
+		select * from groupName
+    </select>
+
+	<!-- 当使用该Mybatis与Spring整合的时候，该文件必须和相应的Mapper接口文件同名，并在同一路径下 -->
+</mapper> 

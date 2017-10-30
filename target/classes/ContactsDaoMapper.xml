@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE mapper 
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hsbc.hktools.dao.ContactsDao">
+    <resultMap type="com.hsbc.hktools.entity.Contacts" id="contactsList">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="sex" column="sex"/>
+        <result property="birthday" column="birthday"/>
+        <result property="groupId" column="groupid"/>
+        <result property="telephone" column="telephone"/>
+        <result property="qq" column="qq"/>
+        <result property="email" column="email"/>
+        <result property="workplace" column="workplace"/>
+        <result property="address" column="address"/>
+        <result property="groupName" column="groupName"/>
+    </resultMap>
+    
+    <resultMap type="com.hsbc.hktools.entity.Contacts" id="diffContactsList">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="birthday" column="birthday"/>
+        <result property="telephone" column="telephone"/>
+        <result property="leftDays" column="diffTime"/>
+    </resultMap>
+
+	<insert id="insertContact" parameterType="com.hsbc.hktools.entity.Contacts" useGeneratedKeys="true" keyProperty="id">
+		insert into contacts (name, sex, birthday, groupId, telephone, qq, email, workplace, address) values (#{name},#{sex},#{birthday},#{groupId},#{telephone},#{qq},#{email},#{workplace},#{address})
+    </insert>
+    
+	<update id="updateContact" parameterType="com.hsbc.hktools.entity.Contacts">
+		update contacts set name=#{name},sex=#{sex},birthday=#{birthday},groupid=#{groupId},telephone=#{telephone},qq=#{qq},email=#{email},workplace=#{workplace},address=#{address} where id=#{id}
+    </update>
+	<!-- 当使用该Mybatis与Spring整合的时候，该文件必须和相应的Mapper接口文件同名，并在同一路径下 -->
+	
+	<select id="getContactsCount" resultType="int">
+	    select COUNT(*) from contacts
+	</select>
+	
+	<select id="getContactsByLimit" resultMap="contactsList" parameterType="java.util.Map">
+	    select * from contacts AS c, groupName AS g where c.groupid=g.groupId limit #{startPos},#{pageSize}
+	</select>
+	
+	<select id="getDayContactListByNameAndGroupId" resultMap="contactsList" parameterType="java.util.Map">
+	    select * from contacts AS c, groupName AS g where c.groupid=g.groupId and c.name like CONCAT(CONCAT('%', #{name}), '%') and c.groupid = #{groupId}
+	</select>
+	
+	<select id="getDayContactListByGroupId" resultMap="contactsList" parameterType="int">
+	    select * from contacts AS c, groupName AS g where c.groupid=g.groupId and c.groupid = #{groupId}
+	</select>
+	
+	<select id="getDayContactListByName" resultMap="contactsList" parameterType="java.lang.String">
+	    select * from contacts AS c, groupName AS g where c.groupid=g.groupId and c.name like CONCAT(CONCAT('%', #{name}), '%')
+	</select>
+	
+	<select id="getAllContacts" resultMap="contactsList">
+	    select * from contacts AS c, groupName AS g where c.groupid=g.groupId
+	</select>
+	
+	<select id="getContactsById" resultMap="contactsList" parameterType="int">
+	    select * from contacts AS c, groupName AS g  where c.id = #{id} and c.groupid=g.groupId
+	</select>
+	
+	<delete id="deleteContact" parameterType="int">
+	    delete from contacts where id=#{contactId}
+	</delete>
+	
+	<select id="getWarningContacts" resultMap="diffContactsList">
+	<![CDATA[
+	    SELECT id, name, birthday, telephone, DATEDIFF(NOW(),contacts.birthday) as diffTime from contacts where DATEDIFF(NOW(),contacts.birthday) <= 25 AND 0 <= DATEDIFF(NOW(),contacts.birthday)
+	    ]]>
+	</select>
+</mapper> 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE mapper 
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hsbc.hktools.dao.SystemInfoDao">
+	<update id="updateSystemInfo" parameterType="com.hsbc.hktools.entity.SystemInfo">
+		update systemInfo set systemName=#{systemName}, author=#{author}, nick=#{nick}, qq=#{qq},telephoneNumber=#{telephoneNumber},email=#{email},webAddress=#{webAddress},webName=#{webName} where id=#{id}
+    </update>
+	<select id="getSystemInfo" resultType="com.hsbc.hktools.entity.SystemInfo"
+		parameterType="java.lang.Integer">
+		select * from systemInfo where id=#{id} limit 1
+    </select>
+    
+	<select id="getSystemOneInfo" resultType="com.hsbc.hktools.entity.SystemInfo">
+		select * from systemInfo limit 1
+    </select>
+</mapper> 

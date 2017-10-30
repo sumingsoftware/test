@@ -1,0 +1,277 @@
+A:visited {
+	COLOR: #000000; 
+        FONT-SIZE: 12px; 
+        TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #000000; 
+        FONT-SIZE: 12px; 
+        TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #003399; 
+        FONT-SIZE: 12px; 
+        TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #003399; 
+        FONT-SIZE: 12px; 
+        TEXT-DECORATION: none
+}
+
+/*--------------------------------------------------------*/
+A.A1:visited {
+	COLOR: #333399; 
+        FONT-SIZE: 12px;
+        font-family: "宋体", "仿宋_GB2312", "黑体";
+        TEXT-DECORATION: none
+}
+A.A1:link {
+	COLOR: #333399; 
+        FONT-SIZE: 12px; 
+        font-family: "宋体", "仿宋_GB2312", "黑体";
+        TEXT-DECORATION: none
+}
+A.A1:hover {
+	COLOR: #333399; 
+        FONT-SIZE: 12px;
+        font-family: "宋体", "仿宋_GB2312", "黑体";
+        TEXT-DECORATION: underline
+}
+A.A1:active {
+	COLOR: #333399; 
+        font-family: "宋体", "仿宋_GB2312", "黑体";
+        FONT-SIZE: 12px; text-decoration: none
+}
+/*--------------------------------------------------------*/
+A.A2:visited {
+	COLOR: #333399; 
+        FONT-SIZE: 12px;
+        font-family: "宋体", "仿宋_GB2312", "黑体";
+        TEXT-DECORATION: none
+}
+A.A2:link {
+	COLOR: #333399; 
+        FONT-SIZE: 12px; 
+        font-family: "宋体", "仿宋_GB2312", "黑体";
+        TEXT-DECORATION: none
+}
+A.A2:hover {
+	COLOR: #CC6600; 
+        FONT-SIZE: 12px;
+        font-family: "宋体", "仿宋_GB2312", "黑体";
+        TEXT-DECORATION: underline
+}
+A.A2:active {
+	COLOR: #CC6600; 
+        font-family: "宋体", "仿宋_GB2312", "黑体";
+        FONT-SIZE: 12px; text-decoration: none
+}
+/*--------------------------------------------------------*/
+A.A3:visited {
+	COLOR: #FF6600; 
+        FONT-SIZE: 12px;
+        font-family: "宋体", "仿宋_GB2312", "黑体";
+        TEXT-DECORATION: none
+; font-weight: bold
+}
+A.A3:link {
+	COLOR: #FF6600; 
+        FONT-SIZE: 12px; 
+        font-family: "宋体", "仿宋_GB2312", "黑体";
+        TEXT-DECORATION: none
+; font-weight: bold
+}
+A.A3:hover {
+	COLOR: #333399; 
+        FONT-SIZE: 12px;
+        font-family: "宋体", "仿宋_GB2312", "黑体";
+        TEXT-DECORATION: underline
+; font-weight: bold
+}
+A.A3:active {
+	COLOR: #333399; 
+        font-family: "宋体", "仿宋_GB2312", "黑体";
+        FONT-SIZE: 12px; text-decoration: none
+; font-weight: bold
+}
+/*--------------------------------------------------------*/
+
+
+TD {
+	COLOR: #000000; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+
+.button80 {
+	BACKGROUND-COLOR: #f7f7f7; BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #ffffff 1px solid; COLOR: #000000; FONT-SIZE: 9pt; HEIGHT: 18px; WIDTH: 80px
+}
+
+
+.select1 {
+	BACKGROUND-COLOR: #d7e7ea; COLOR: #355f66; FONT-SIZE: 9pt
+}
+.select {
+	BACKGROUND-COLOR: #FFFFD0; BORDER-BOTTOM: #33ccff 1px groove; BORDER-LEFT: #336699 1px groove; BORDER-RIGHT: #33ccff 1px groove; BORDER-TOP: #336699 1px groove; COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; WIDTH: 105px
+}
+.selectnostyle {
+	BACKGROUND-COLOR: #ddeeff; BORDER-BOTTOM: #33ccff 1px groove; BORDER-LEFT: #336699 1px groove; BORDER-RIGHT: #33ccff 1px groove; BORDER-TOP: #336699 1px groove; COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle
+}
+.selectsearch {
+	BACKGROUND-COLOR: #ddeeff; BORDER-BOTTOM: #33ccff 1px groove; BORDER-LEFT: #336699 1px groove; BORDER-RIGHT: #33ccff 1px groove; BORDER-TOP: #336699 1px groove; COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle
+}
+.inputrequest {
+	BACKGROUND-COLOR: #FFFFFF; BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-FAMILY: "宋体"; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle
+}
+.inputnotrequest {
+	BACKGROUND-COLOR: #feeade; BORDER-BOTTOM: #13215e 1px solid; BORDER-LEFT: #13215e 1px solid; BORDER-RIGHT: #13215e 1px solid; BORDER-TOP: #13215e 1px solid; FONT-FAMILY: "宋体"; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle
+}
+.input {
+	BACKGROUND-COLOR: #E8E8E8; BORDER-BOTTOM: #000000 1px groove; BORDER-LEFT: #000000 1px groove; BORDER-RIGHT: #000000 1px groove; BORDER-TOP: #000000 1px groove; COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle FONT-COLOR: "#000000"
+}
+.inputdown {
+	BACKGROUND-COLOR: #E8E8E8; BORDER-BOTTOM: #000000 1px groove; BORDER-LEFT: #FFFFFF 0px groove; BORDER-RIGHT: #FFFFFF 0px groove; BORDER-TOP: #FFFFFF 0px groove; COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; FONT-COLOR: "#000000"
+}
+.inputno {
+	BACKGROUND-COLOR: #E8E8E8; BORDER-BOTTOM: #000000 0px groove; BORDER-LEFT: #FFFFFF 0px groove; BORDER-RIGHT: #FFFFFF 0px groove; BORDER-TOP: #FFFFFF 0px groove; COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle FONT-COLOR: "#000000"
+}
+.input1 {
+	BACKGROUND-COLOR: #ddeeff; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 0px solid; BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; COLOR: black; FONT-FAMILY: "宋体"; FONT-SIZE: 9pt
+}
+.select2 {
+	BACKGROUND-COLOR: #ddeeff; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 0px solid; BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; COLOR: black; FONT-FAMILY: "宋体"; FONT-SIZE: 9pt
+}
+
+.tbButton {
+	BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: buttonface 1px solid; BORDER-LEFT: buttonface 1px solid; BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: buttonface 1px solid; CURSOR: hand; FILTER: alpha(opacity=200); HEIGHT: 22px; WIDTH: 22px
+}
+
+.tbButtonMouseOverUp {
+	BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: buttonshadow 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; HEIGHT: 23px; WIDTH: 24px
+}
+.tbButtonMouseOverDown {
+	BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: buttonhighlight 1px solid; BORDER-LEFT: buttonshadow 1px solid; BORDER-RIGHT: buttonhighlight 1px solid; BORDER-TOP: buttonshadow 1px solid; HEIGHT: 23px; WIDTH: 24px
+}
+.tbButtonDown {
+	BACKGROUND-COLOR: gainsboro; BORDER-BOTTOM: buttonhighlight 1px solid; BORDER-LEFT: buttonshadow 1px solid; BORDER-RIGHT: buttonhighlight 1px solid; BORDER-TOP: buttonshadow 1px solid; HEIGHT: 23px; WIDTH: 24px
+}
+.button1 {
+	BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: #000000 1px groove; BORDER-LEFT: #FFFFFF 1px groove; BORDER-RIGHT: #000000 1px groove; BORDER-TOP: #FFFFFF 1px groove; COLOR: #000000; FONT-FAMILY: "Verdana"; FONT-SIZE: 9pt; HEIGHT: 18px;border-color: #FFFFFF #333333 #333333 #FFFFFF
+}
+.button {
+	border-left: 1px solid rgb(240,240,240); border-right: 1px solid rgb(0.0,255); border-top: 1px solid rgb(240,240,240); border-bottom:1px solid rgb(0.0,255); font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 9pt; color: #404040;background:#D4D0C8; font-weight: normal; border-color: #FFFFFF #333333 #333333 #FFFFFF;height:20
+}
+.button120 {
+	BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: #000000 1px groove; BORDER-LEFT: #000000 1px groove; BORDER-RIGHT: #000000 1px groove; BORDER-TOP: #000000 1px groove; COLOR: #000000; FONT-FAMILY: "Verdana"; FONT-SIZE: 9pt; HEIGHT: 20px;WIDTH:120px; VERTICAL-ALIGN: middle
+}
+.button135 {
+	BACKGROUND-COLOR: buttonface; BORDER-BOTTOM: #000000 1px groove; BORDER-LEFT: #000000 1px groove; BORDER-RIGHT: #000000 1px groove; BORDER-TOP: #000000 1px groove; COLOR: #000000; FONT-FAMILY: "Verdana"; FONT-SIZE: 9pt; HEIGHT: 20px;WIDTH:135px; VERTICAL-ALIGN: middle
+}
+/*-----------------表格头部颜色#D4D0C8-----------------*/
+.tablehead {
+	BACKGROUND-COLOR: #D4D0C8; COLOR: #003333; FONT-FAMILY: Arial,宋体，Times New Roman; FONT-SIZE: 10.5pt; TEXT-ALIGN: center
+}
+.tablehead1 {
+	BACKGROUND-COLOR: #D4D0C8; COLOR: #003333; FONT-FAMILY: Arial,宋体，Times New Roman; FONT-SIZE: 10.5pt;
+}
+
+.tablehead2 {
+	BACKGROUND-COLOR: #D4D0d9; COLOR: #003333; FONT-FAMILY: Arial,宋体，Times New Roman; FONT-SIZE: 10.5pt; TEXT-ALIGN: center
+}
+/*------------------------------------------------------*/
+.tableheadsearch {
+	BACKGROUND-COLOR: #FFFFFF; COLOR: #003333; FONT-FAMILY: Arial,宋体，Times New Roman; FONT-SIZE: 10.5pt; TEXT-ALIGN: left
+}
+.tableheadpage{
+	BACKGROUND-COLOR: #FFFFFF; COLOR: #003333; FONT-FAMILY: Arial,宋体，Times New Roman; FONT-SIZE: 10.5pt; TEXT-ALIGN: center
+}
+/*-----------------主题颜色#D4D0C8-----------------*/
+.navbar{
+	BACKGROUND-COLOR: #D4D0C8; COLOR: #FFFFFF; FONT-FAMILY: Arial,宋体，Times New Roman; FONT-SIZE: 12pt; TEXT-ALIGN: center
+}
+
+BODY {
+	BACKGROUND-COLOR: #FFFFFF; BORDER-RIGHT: #000000 0px outset; COLOR: #000000; FONT-SIZE: 9pt; LINE-HEIGHT: 14px; MARGIN-LEFT: 0px; MARGIN-TOP: 5px; TEXT-DECORATION: none; SCROLLBAR-FACE-COLOR: #333333; SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF; MARGIN-LEFT: 5px; SCROLLBAR-SHADOW-COLOR: #000000; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-DARKSHADOW-COLOR: #000000
+}
+
+.memusty0
+{
+    behavior:url(../function/0001.htc);width:18px;padding:0px 0px 0px 0px;font-weight:bold
+}
+.memusty1
+{
+    behavior:url(../function/0002.htc);width:18px;padding:0px 0px 0px 0px;font-weight:bold
+}
+.memusty2
+{
+    behavior:url(../function/0001.htc);padding:0px 0px 0px 0px;font-weight:bold
+}
+.workplace 
+{ 
+	BACKGROUND-COLOR: #FFFFFF; BORDER-BOTTOM: #FFFFFF 1px groove; BORDER-LEFT: #FFFFFF 1px groove; BORDER-RIGHT: #FFFFFF 1px groove; BORDER-TOP: #FFFFFF 1px groove; COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle FONT-COLOR: "#000000"
+	height:100%; 
+	width:100%; 
+	overflow=auto; 
+} 
+/*-------------------------滑动菜单颜色--------------------------------*/
+.titleStyle{
+	border-left: 1px solid rgb(240,240,240); border-right: 1px solid rgb(0.0,255); border-top: 1px solid rgb(240,240,240); border-bottom:1px solid rgb(0.0,255); font-size: 9pt; color: #404040;background:#D4D0C8; font-weight: normal; border-color: #FFFFFF #333333 #333333 #FFFFFF
+      /*---------------
+      background-color:#D4D0C8;color:#000000;
+      border-top:1px solid #FFFFFF;font-size:9pt;cursor:hand;
+      ---------------*/
+  }
+.titleStyleOver{
+      background-color:#E2E2E2;color:#000000;
+      border-top:1px solid #FFFFFF;font-size:9pt;cursor:hand;
+  }
+.contentStyle{
+	background-color:#efefef;color:black;font-size:9pt;cursor:hand;
+}
+.contentStyleOver{
+	BACKGROUND-COLOR: #F9F9F9;
+	/*---------------
+	BACKGROUND-COLOR: #F9F9F9; BORDER-BOTTOM: #000000 1px groove; BORDER-LEFT: #000000 1px groove; BORDER-RIGHT: #000000 1px groove; BORDER-TOP: #000000 1px groove; COLOR: #000000; FONT-SIZE: 9pt; HEIGHT: 20px;
+	border-left: 1px solid rgb(240,240,240); border-right: 1px solid rgb(0.0,255); border-top: 1px solid rgb(240,240,240); border-bottom:1px solid rgb(0.0,100); font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 9pt; color: #404040;background:#F9F9F9; font-weight: normal; border-color: #FFFFFF #333333 #333333 #FFFFFF
+	background-color:#F9F9F9;color:black;font-size:9pt;cursor:hand;
+	---------------*/
+}
+/*---------------顶部下拉菜单样式---------------------*/
+.menu                   { position: absolute; left: 0; top: 2;
+                             visibility: hidden; background: #E2E2E2;
+                             width: 100px; margin: 0px 0px; padding: 0px 0px;
+                             border: 1px silver solid;z-index:3;
+                             overflow: visible; ; clip:     rect(   )}
+.menu a:visited { font-family: "Tahoma"; font-size: 11px;
+                             text-decoration: none; font-weight: normal;
+                             color: #000000; background: #D4D0C8;
+                             width: 104px; padding-left: 8px; ; line-height: 22px; border-color: #FFFFFF #666666 #333333 #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; clip:  rect(   )}
+.menu a:hover            { font-family: "Tahoma"; font-size: 11px;
+                             text-decoration: none; font-weight: normal;
+                             color: #000000; background: #F9F9F9;
+                             width: 104px; padding-left: 8px; ; line-height: 22px; clip:  rect(   )}
+.menu .border            { border: 1px solid #F4F4F4;
+                             border-bottom: 1px solid #808080;
+                             border-right: 1px solid #808080; }
+.menu .text              { overflow: hidden;
+                             width: 104px; height: 15px; }
+.menu .arrow             { overflow: hidden;
+                             width: 15px; height: 12px;
+                             padding-left: 5px; padding-top: 3px; }
+.menu .arrow img         { width: 6px; height: 7px;
+                             border: 0px; }  
+/*-----------------主题颜色#D4D0C8-----------------*/
+.menu a { font-family: "Tahoma"; font-size: 11px;
+                             text-decoration: none; font-weight: normal;
+                             color: black; background: #D4D0C8;
+                             width: 104px; padding-left: 8px;  ; clip:  rect(   ); border-color: #FFFFFF #666666 #333333 #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; line-height: 22px}
+/*-----------------下拉菜单字体颜色#000000-----------------*/
+.menu a:link {  color: #000000; text-decoration: none}
+
+.TableMenu {
+	Border-Right: 2px groove; 
+	Border-Top: 2px groove; 
+	Border-Left: 2px groove; 
+	Border-Bottom: 2px groove;
+}
+
+.a3{background-color : #ececec; line-height : normal;}

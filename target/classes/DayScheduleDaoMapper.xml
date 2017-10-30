@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE mapper 
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hsbc.hktools.dao.DayScheduleDao">
+    <resultMap type="com.hsbc.hktools.entity.DaySchedule" id="dayScheduleList">
+        <id property="dayScheduleId" column="daySheduleId"/>
+        <result property="title" column="title"/>
+        <result property="place" column="place"/>
+        <result property="content" column="content"/>
+        <result property="year" column="year"/>
+        <result property="month" column="month"/>
+        <result property="day" column="day"/>
+    </resultMap>
+
+	<insert id="insertDaySchedule" parameterType="com.hsbc.hktools.entity.DaySchedule" useGeneratedKeys="true" keyProperty="dayScheduleId">
+		insert into daySchedule (title, place, content, year, month, day) values (#{title},#{place},#{content},#{year},#{month},#{day})
+    </insert>
+	<!-- 当使用该Mybatis与Spring整合的时候，该文件必须和相应的Mapper接口文件同名，并在同一路径下 -->
+	
+	<select id="getDayScheduleCount" resultType="int">
+	    select COUNT(*) from daySchedule
+	</select>
+	
+	<select id="getDayScheduleList" resultMap="dayScheduleList" parameterType="java.util.Map">
+	    select * from daySchedule limit #{startPos},#{pageSize}
+	</select>
+	
+	<select id="getAllDayScheduleList" resultMap="dayScheduleList">
+	    select * from daySchedule
+	</select>
+	
+	<select id="getDayScheduleListByTitle" resultMap="dayScheduleList" parameterType="java.lang.String">
+	    select * from daySchedule where title like CONCAT(CONCAT('%', #{title}), '%')
+	</select>
+	
+	<update id="updateDaySchedule" parameterType="com.hsbc.hktools.entity.DaySchedule">
+	    update daySchedule set title=#{title}, place=#{place},content=#{content},year=#{year},month=#{month},day=#{day} where daySheduleId = #{dayScheduleId}
+	</update>
+	
+	<delete id="deleteDaySchedule" parameterType="int">
+	    delete from daySchedule where daySheduleId = #{dayScheduleId}
+	</delete>
+	
+	<select id="getDayScheduleById" resultType="com.hsbc.hktools.entity.DaySchedule" parameterType="int">
+	    select * from daySchedule WHERE daySheduleId = #{dayScheduleId}
+	</select>
+</mapper> 
